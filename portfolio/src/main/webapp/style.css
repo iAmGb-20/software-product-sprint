@@ -17,8 +17,9 @@ section
 {
     position: relative;
     min-height: 100vh;
-    background: url("..images/IMG_2872.jpg");
+    background: url("images/resized--2.jpg");
     background-size: cover;
+    
     background-position: right;
     display: flex;
     justify-content: space-between;
@@ -28,7 +29,7 @@ section
 .banner h2
 {
     font-size: 3em;
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-weight: 500;
     line-height: 1.5em;
 }
@@ -69,4 +70,110 @@ header
     width: 100%;
     padding: 40px 100px;
     z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.4s;
+
+}
+
+header.sticky
+{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header.sticky ul li a
+{
+    color: #111;
+}
+
+header ul
+{
+    position: relative;
+    display: flex;
+}
+
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a
+{
+    position: relative;
+    display: list-item;;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.heading
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading h2
+{
+    font-weight: 600;
+    font-size: 30px;
+}
+.content
+{
+    /*text-align: center; */
+    justify-content: space-between;
+    display: flex;
+}
+
+.contentBx
+{
+    padding-right: 30px;
+}
+.contentBx h3
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.w50
+{
+    min-width: 50%;
+
+}
+
+img 
+{
+    max-width: 100%;
+}
+
+
+
+.tools ul
+{
+    position: relative;
+    display: flex;
+}
+
+.tools ul li
+{
+    position: relative;
+    display: block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    list-style-type: square;
+}
+
+.courses heading
+{
+    
 }
