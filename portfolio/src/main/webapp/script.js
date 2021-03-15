@@ -26,3 +26,16 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+function addRandomQuote() 
+{
+    // Array with different type of stuff I love.
+    const quotes = ['I love video games!', 'I love food!', 'I love programming!', 'I love basketball!'];
+
+    // Pick a random quote.
+    const quote = quotes[Math.floor(Math.random() * quotes.length)];
+
+    // Add it to the page.
+    const quoteContainer = document.getElementById('quote-container');
+    quoteContainer.innerText = quote;
+}

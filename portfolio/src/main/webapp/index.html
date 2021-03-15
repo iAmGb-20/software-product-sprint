@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script1.js"></script>
     <script src="script.js"></script>
+    <script src="json.js"></script>
   </head>
   <body>
       <header>
@@ -16,6 +18,7 @@
               <li><a href="#">Skills</a></li>
               <li><a href="#">Contact</a></li>
               <li><a href="/hello">Hello</a></li>
+              <li><a href="/facts">Facts</a></li>
           </ul>
       </header>
 
@@ -30,6 +33,9 @@
         <div class="heading">
             <h2>Godbless Chille</h2>
         </div>
+        <div id="quote-container"></div>
+        <button class="button-footer" onclick="getFacts()">Fact</button>
+        <p id="facts-container"></p>
         <div class="content">
             <div class="contentBx w50"></div>
             <h3>Univ. of Rochester '23</h3>
@@ -42,6 +48,10 @@
                 outdoor activities such as hiking and kayaking. Therefore, if you do not find me in the music room, or in my room,
                 then you might be able to see me on Genesee River, trying to prevent myself from drowning with my kayak :)
             </p>
+            <p id="string-container">Click here to see stuff</p>
+            <button onclick="showServerString();">
+                    string
+            </button>
         </div>
         <div class="w50">
             <img src="images/resizedimg.jpg" class="img">
