@@ -244,14 +244,13 @@
         </div>
     </section>
     <div id="image-form-container">
-            <form action="/upload" method="POST" enctype="multipart/form-data">
-                <p>Add a message and and Image!</p>
+            <form action="/upload" method="POST">
+                <p>Add a message!</p>
                 <textarea name="message">Hello!</textarea>
-                <br/>
-                <input type="file" accept="image/*" name="image"> <!--Multiple images later?-->
-                <button>Upload</button>
+                <br>
+                <input type='submit'> 
             </form>
-            <p>Click <a href="/image-list.html">here</a> to see a list of uploaded images!</p>
+            
     </div>
   </body>
 </html>
