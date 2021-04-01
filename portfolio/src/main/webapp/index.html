@@ -9,6 +9,7 @@
     <script src="script.js"></script>
     <script src="json.js"></script>
   </head>
+<body onload="loadMessages()"></body>  
   <body>
       <header>
           <div class="toggle"></div>
@@ -243,14 +244,24 @@
 
         </div>
     </section>
+
+    <div id="comments">
+      <button onclick="showMessages()">Show Messages</button>
+      <div id="message-container"></div>
+    </div>
+
     <div id="image-form-container">
             <form action="/upload" method="POST">
                 <p>Add a message!</p>
                 <textarea name="message">Hello!</textarea>
                 <br>
                 <input type='submit'> 
-            </form>
-            
+            </form>  
     </div>
+
+    <div id="list_container">
+      <ul id="task-list"></ul>
+    </div>
+
   </body>
 </html>
